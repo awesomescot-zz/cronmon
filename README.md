@@ -1,4 +1,4 @@
-cronmon
+cronweb
 =======
 
-cron monitoring wrapper and web frontend
+webapp to display info about cronjobs
