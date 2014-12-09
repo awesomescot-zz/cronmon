@@ -10,5 +10,5 @@ cd $BASE_DIR
 
 rbenv version 2.0.0-p247
 
-exec bundle exec rackup -p 4111 --pid /tmp/cronmon.pid 2>&1
+exec bundle exec rackup -p 4555 --pid /tmp/cronmon.pid 2>&1
 
