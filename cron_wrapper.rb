@@ -16,8 +16,8 @@ job_info = { exit:status.exitstatus, stdout:stdout.read.strip, stderr:stderr.rea
 redis.lpush(redis_key, job_info.to_json)
 
 # remove entries over 1000
-if redis.llen(redis_key) > 10
-  redis.ltrim(redis_key, 0, 9)
+if redis.llen(redis_key) > 1000
+  redis.ltrim(redis_key, 0, 999)
 end
 
 
